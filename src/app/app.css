@@ -41,7 +41,7 @@ main {
 /* Стил за app-counter компонент */
 app-counter {
   display: block;
-  width: 300px;
+  width: 500px;
   padding: 1.5rem;
   background-color: white;
   border-radius: 8px;

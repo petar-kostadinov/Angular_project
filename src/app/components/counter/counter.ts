@@ -8,7 +8,7 @@ import { CounterService } from '../../services/counter';
   styleUrl: './counter.css',
 })
 export class CounterComponent {
-  constructor(public CounterService: CounterService){
-    
+  constructor(public counterService: CounterService){
+
   }
 }

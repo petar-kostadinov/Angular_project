@@ -1,0 +1,65 @@
+/* По-широк Counter контейнер */
+.counter-container {
+  width: 100%;            /* заема ширината на родителя */
+  max-width: 600px;       /* увеличена максимална ширина */
+  margin: 2rem auto;
+  padding: 2rem 2.5rem;
+  background-color: #fdfdfd;
+
+  border: 2px solid #0b518e;
+  border-radius: 16px;
+
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Заглавие */
+.counter-container h3 {
+  margin-bottom: 1.2rem;
+  font-size: 1.rem;
+  color: #094a83;
+}
+
+/* Стойността на counter */
+.counter-container .counter-value {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+/* Контейнер за бутоните */
+.counter-container .counter-buttons {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  flex-wrap: nowrap;  /* не позволява бутоните да се пренасят */
+}
+
+/* Стил за бутоните */
+.counter-container .counter-buttons .btn {
+  min-width: 100px;   /* бутоните имат минимална ширина */
+  padding: 0.75rem 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  color: white;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  transition: transform 0.1s, background-color 0.2s;
+}
+
+/* Цветове на бутоните */
+.counter-container .btn.decrement { background-color: #e53935; }
+.counter-container .btn.reset     { background-color: #757575; }
+.counter-container .btn.increment { background-color: #43a047; }
+
+/* Hover ефекти */
+.counter-container .counter-buttons .btn:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
