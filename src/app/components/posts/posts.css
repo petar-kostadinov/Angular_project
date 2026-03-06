@@ -1,0 +1,90 @@
+.posts-wrapper {
+  display: flex;
+  justify-content: center;  /* центрира рамката */
+  width: 100%;
+  padding: 2rem 0;
+  box-sizing: border-box;
+}
+
+.posts-container {
+  width: 650px;         /* ширина на контейнера */
+  max-width: 95%;       /* responsive за малки екрани */
+  padding: 2rem;
+
+  background: #ffffff;
+  border: 2px solid #0ea5e9;
+  border-radius: 14px;
+
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+  box-sizing: border-box;
+}
+
+.posts-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.posts-header h3 {
+  margin: 0;
+  font-size: 1.6rem;
+  color: #0ea5e9;
+}
+
+.header-buttons button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  padding: 0;
+}
+
+.btn-refresh {
+  padding: 0.5rem 1rem;
+  background: #0ea5e9;
+  color: white;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.btn-refresh:hover {
+  background: #0284c7;
+  transform: translateY(-2px);
+}
+
+.btn-refresh:active {
+  transform: scale(0.96);
+}
+
+/* Grid с точно две колони и максимум три реда */
+.posts-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);  /* 2 колони */
+  grid-auto-rows: minmax(150px, auto);   /* височина на редовете */
+  gap: 1rem;
+  max-height: calc(3 * 150px + 2rem);   /* максимум 3 реда */
+  overflow-y: auto;                      /* скрол ако има повече от 6 поста */
+}
+
+.post-vard {
+  padding: 1rem;
+  background: #f0f9ff;
+  border: 1px solid #bae6fd;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.post-vard h4 {
+  margin: 0 0 0.5rem 0;
+  color: #0369a1;
+  font-size: 1.2rem;
+}
+
+.post-vard p {
+  margin: 0;
+  color: #0c4a6e;
+  line-height: 1.4;
+  font-size: 0.95rem;
+}
